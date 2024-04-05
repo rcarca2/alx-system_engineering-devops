@@ -19,7 +19,7 @@ frontend https
 
 backend backend_servers
     balance roundrobin
-    option httpchk GET / HTTP/1.1\r\nHost:\ www.saheed.tech
+    option httpchk GET / HTTP/1.1\r\nHost:\ www.dotserveinc.tech
     server 528969-web-01 54.89.31.234:80 check
     server 528969-web-02 54.174.253.226:80 check
 sudo service haproxy restart
